@@ -1,0 +1,30 @@
+EXPLICACIÓN DEL PROCESO:
+1.Instalar y configurar Maven comprobando que está instalado.
+	Ya estaba instalado y configurado.
+
+2.Crear un proyecto maven llamado "fibonacci" del grupo "es.iessoterohernandez.daw.endes" con una clase que tenga un método fibonacci y construir el proyecto.
+	En EclipseIDE, clickamos en file->new->maven_project, le damos a next, seleccionamos org.apache.maven.archetypes maven-archetype-quickstart version:1.1, predeterminado ya tenemos es.iessoterohernandez.daw.endes,
+	así que en artifact ID lo llamamos fibonacci y clickamos en finish.
+
+ 2.1Crear el proyecto y desarrollar el código fuente necesario (2 puntos)
+	Con el projecto ya creado, desarrollamos el codigo fibonacci.
+
+ 2.2Generar el artefacto de salida (nombre_de_proyecto.jar) (1 punto)
+	Damos click derecho al proyecto maven fibonacci->export->jar_file, finish.
+
+3.Gestionar dependencias
+	Vamos al archivo pom.xml de fibonacci, y copiamos desde <group_id> hasta <version>
+
+ 3.1Instalar el proyecto con la clase fibonacci en el repositorio local (1 punto)
+	Damos click derecho al proyecto maven fibonacci->run_as->maven_installer.
+
+ 3.2Crear un nuevo proyecto llamado "fibonacciMain" del grupo "es.iessoterohernandez.daw.endes" que utilice el artefacto anterior (de la clase fibonacci) (2 puntos)
+	Creamos el proyecto con los mismos pasos que el proyecto maven fibonacci. En el archivo pom.xml de este proyecto (fibonacciMain), pegamos la dependencia (3.Gestionar dependencias), e importamos en fibonaccimain.java el
+	otro proyecto.
+
+4.Crear un proyecto maven llamado "HelloWorldPdf" del grupo "es.iessoterohernandez.daw.endes" con una clase que utilice la librería pdf de iText. Este proyecto debe generar un pdf con un contenido básico (Hola Mundo).
+	Creamos el proyecto con los mismos pasos que los otros proyectos. En el archivo pom.xml de este proyecto pegamos el fichero de dependencia obtenido de la red, e importamos los diferentes 
+	recursos de la red.
+
+5.Subir el código fuente de los proyectos a tu repositorio público de GitHub. (1 punto)
+	Creo una cuenta en GitHub, creo un repositorio publico y subo los .jar y la documentación.
